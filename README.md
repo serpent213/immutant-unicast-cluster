@@ -15,4 +15,6 @@
 5. Deploy to all nodes using the JBoss CLI, for example.
 6. Browse to http://node1.example/jbctest2/, enter some data, then check
    the other node(s) to see if HornetQ messaging and Infinispan caching do
-   work. Good luck!  :)
+   work.
+
+Good luck!  :)
