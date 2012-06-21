@@ -3,8 +3,8 @@
 1. Download the latest build from http://immutant.org/builds/, take it
    as a customised JBoss version.
 2. Install the provided standalone-ha.xml. For two nodes you just need
-   to change the IP addresses. More nodes should be easy to add.
-   See
+   to change the IP addresses (search for 10.0.0.). More nodes should
+   be easy to add. See
    http://torquebox.org/2x/builds/html-docs/production-setup.html#clustering-without-multicast
    for details of the unicast configuration. If you have multicast
    available you should be fine with the stock configuration.

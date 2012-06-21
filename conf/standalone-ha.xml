@@ -273,7 +273,7 @@
                 <transport type="TCP" socket-binding="jgroups-tcp" diagnostics-socket-binding="jgroups-diagnostics"/>
                 <protocol type="TCPPING">
                     <property name="initial_hosts">
-                        88.198.15.148[7600]
+                        10.0.0.2[7600]
                     </property>
                 </protocol>
                 <protocol type="MERGE2"/>
@@ -508,13 +508,13 @@
 
     <interfaces>
         <interface name="management">
-            <inet-address value="${jboss.bind.address.management:176.9.90.167}"/>
+            <inet-address value="${jboss.bind.address.management:10.0.0.1}"/>
         </interface>
         <interface name="public">
-            <inet-address value="${jboss.bind.address:176.9.90.167}"/>
+            <inet-address value="${jboss.bind.address:10.0.0.1}"/>
         </interface>
         <interface name="unsecure">
-            <inet-address value="${jboss.bind.address.unsecure:176.9.90.167}"/>
+            <inet-address value="${jboss.bind.address.unsecure:10.0.0.1}"/>
         </interface>
     </interfaces>
 
@@ -541,16 +541,10 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
         <outbound-socket-binding name="messaging-eu02">
-            <remote-destination host="88.198.15.148" port="5445"/>
+            <remote-destination host="10.0.0.2" port="5445"/>
         </outbound-socket-binding>
         <outbound-socket-binding name="mail-smtp">
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-
-    <deployments>
-        <deployment name="jbctest2.ima" runtime-name="jbctest2.ima">
-            <content sha1="b52279676fef1dbf5e33e37cc2d3e17e9376197f"/>
-        </deployment>
-    </deployments>
 </server>
